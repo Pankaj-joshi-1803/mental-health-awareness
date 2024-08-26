@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Awareness</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mental Health Matters</h1>
+        <p>Your mental well-being is just as important as your physical health.</p>
+    </header>
+
+    <section class="intro">
+        <h2>Understanding Mental Health</h2>
+        <p>Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act. It also helps determine how we handle stress, relate to others, and make choices.</p>
+        <p>Mental health is important at every stage of life, from childhood and adolescence through adulthood.</p>
+    </section>
+
+    <section class="quiz">
+        <h2>Mental Health Quiz</h2>
+        <form id="mentalHealthQuiz">
+            <div class="question">
+                <p>1. How often do you feel overwhelmed by your daily responsibilities?</p>
+                <input type="radio" name="q1" value="5"> Always<br>
+                <input type="radio" name="q1" value="4"> Often<br>
+                <input type="radio" name="q1" value="3"> Sometimes<br>
+                <input type="radio" name="q1" value="2"> Rarely<br>
+                <input type="radio" name="q1" value="1"> Never<br>
+            </div>
+
+            <div class="question">
+                <p>2. How frequently do you experience feelings of anxiety or panic?</p>
+                <input type="radio" name="q2" value="5"> Always<br>
+                <input type="radio" name="q2" value="4"> Often<br>
+                <input type="radio" name="q2" value="3"> Sometimes<br>
+                <input type="radio" name="q2" value="2"> Rarely<br>
+                <input type="radio" name="q2" value="1"> Never<br>
+            </div>
+
+            <div class="question">
+                <p>3. How well do you sleep at night?</p>
+                <input type="radio" name="q3" value="1"> Very well<br>
+                <input type="radio" name="q3" value="2"> Well<br>
+                <input type="radio" name="q3" value="3"> Average<br>
+                <input type="radio" name="q3" value="4"> Poor<br>
+                <input type="radio" name="q3" value="5"> Very poor<br>
+            </div>
+
+            <div class="question">
+                <p>4. How often do you feel down, depressed, or hopeless?</p>
+                <input type="radio" name="q4" value="5"> Always<br>
+                <input type="radio" name="q4" value="4"> Often<br>
+                <input type="radio" name="q4" value="3"> Sometimes<br>
+                <input type="radio" name="q4" value="2"> Rarely<br>
+                <input type="radio" name="q4" value="1"> Never<br>
+            </div>
+
+            <div class="question">
+                <p>5. How often do you find it hard to concentrate on tasks?</p>
+                <input type="radio" name="q5" value="5"> Always<br>
+                <input type="radio" name="q5" value="4"> Often<br>
+                <input type="radio" name="q5" value="3"> Sometimes<br>
+                <input type="radio" name="q5" value="2"> Rarely<br>
+                <input type="radio" name="q5" value="1"> Never<br>
+            </div>
+
+            <button type="button" onclick="calculateScore()">Get Your Score</button>
+        </form>
+
+        <div id="result" class="result"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mental Health Awareness. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    button {
+        border: 2px solid red; /* Temporary border to help locate the button */
+    }
+    
+</body>
+</html>
